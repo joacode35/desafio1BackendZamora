@@ -9,7 +9,7 @@ class ProductManager {
   addProduct(title, description, price, thumbail, code, stock) {
     for (let i = 0; i < this.products.length; i++) {
       if (this.products[i].code === code) {
-        console.log(`El codigo ${code} esta repetido`);
+        console.log(`codigo ${code} repetido`);
         break;
       }
     }
@@ -32,7 +32,7 @@ class ProductManager {
         id: ProductManager.id,
       });
     } else {
-      console.log("Todos los campos son requeridos");
+      console.log("Campo obligatorio");
     }
   }
 
